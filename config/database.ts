@@ -6,14 +6,7 @@
  */
 
 import Env from '@ioc:Adonis/Core/Env'
-
-/**
- * If you are using SQLite, must import a different module
- */
-if (Env.get('DB_CONNECTION') === 'sqlite') {
-  // @ts-ignore
-  import Application from '@ioc:Adonis/Core/Application'
-}
+import Application from '@ioc:Adonis/Core/Application'
 import {DatabaseConfig} from '@ioc:Adonis/Lucid/Database'
 
 const databaseConfig: DatabaseConfig = {
